@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mohammed Anaf - Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        Mohammed Anaf Master
+        <div class="contact_info">
+          <img src="./images/envelope.png" alt="Email Address" />
+          mohammedanafm@gmail.com
+        </div>
+        <div style="clear: both"></div>
+        <div class="contact_info">
+          <img src="./images/phone.png" alt="Phone Number" />
+          +91 6354304482
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <!-- Add the links for Skills, Projects and Recommendation here -->
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="https://user-images.githubusercontent.com/69011963/137184767-79a13ec7-1bb3-4341-a6da-3a149c9c159a.gif" class="profile_image" />
+    </div>
+
+    <div>
+      <h1>
+        Hi, I'm Mohammed Anaf!
+        <img src="./images/waving-hand.png" width="60px" />
+      </h1>
+      <p>
+        I am an experience frontend developer with 3 months of experience in
+        building responsive as well as interactive websites. I have worked at
+        Innovius Software as an intern. I am an avid user of modern
+        technologies and have used HTML5, CSS3, Bootstrap, JavaScript, On-Page
+        SEO, PWAs, jQuery, React.js, Tailwind CSS, Version Control, and Figma.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div style="clear: both"></div>
+
+    <div class="all_skills">
+      <div class="skill">
+        <img src="./images/html5.png" />
+        <h6>HTML</h6>
+        <p>3 years experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./images/CSS3.png" />
+        <h6>CSS</h6>
+        <p>3 years experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./images/js.jpeg" />
+        <h6>JavaScript</h6>
+        <p>3 months experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./images/node.png" />
+        <h6>Node.js</h6>
+        <p>1 month experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./images/react.png" />
+        <h6>React.js</h6>
+        <p>1 month experience</p>
+      </div>
+
+      <!-- Add more skills here -->
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div style="clear: both"></div>
+
+    <div id="projects-container" class="projects-container">
+      <div class="project-card">
+        <h3>Divya Infocom Service</h3>
+        <ul>
+          <li>
+            Built a portfolio website for IT Components and Hardware store, established in the year 2021, it started as
+            a reseller of computer peripherals and IT consulting service in Ahmedabad with a small team of 2
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="project-card">
+        <h3>DetoxDynasty</h3>
+        <ul>
+          <li>
+            Developed and deployed a landing page website for a Health-Ed Tech startup that helps people, around the
+            world, quit any of their bad or harmful addictions in the most natural and habitual manner
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="project-card">
+        <h3>IFLD</h3>
+        <ul>
+          <li>
+            Created an event page for a seminar on Top 5 Management Thinkers of the World which was co-hosted by Simon Sinek, Noboru
+            Konno, Charles Savage, Dr. Shailesh Thaker, and Tom Peters.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div style="clear: both"></div>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear: both"></div>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Incredible service! The project was completed ahead of schedule with exceptional quality. Communication was
+        seamless and the final product exceeded our expectations.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        A true professional in software development. Delivered a robust, scalable solution that perfectly met our needs.
+        Highly recommend for any tech project!
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Outstanding developer! Brought our vision to life with precision and creativity. The user interface is intuitive
+        and performance is flawless.
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>
+        <input type="text" placeholder="Name (Optional)" /> <br />
+        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">
+            Submit
+          </button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="iconbutton">
+    <a href="#home">
+      <!--Add the code here for the logo to appear and the icon to be actionable-->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+        width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="popup" id="popup" class="flex_center">
+    <img src="./images/checkmark--outline.svg" />
+    <h3>Thank you for leaving a recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+</body>
+
+</html>
